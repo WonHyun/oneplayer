@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:oneplayer/pages/main_screen.dart';
+import 'package:oneplayer/pages/main_page.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 Future<void> requestPermissions() async {
