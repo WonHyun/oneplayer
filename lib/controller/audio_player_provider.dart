@@ -123,8 +123,8 @@ class AudioPlayerProvider extends ChangeNotifier {
     return _audioPlayer.playing;
   }
 
-  void seek(int duration) {
-    _audioPlayer.seek(Duration(milliseconds: duration));
+  void seek(int duration) async {
+    await _audioPlayer.seek(Duration(milliseconds: duration));
     notifyListeners();
   }
 
