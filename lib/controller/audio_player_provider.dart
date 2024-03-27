@@ -198,7 +198,7 @@ class AudioPlayerProvider extends ChangeNotifier {
 
   void setSpeed(double speed) async {
     _speed = double.parse(speed.toStringAsFixed(1));
-    await _audioPlayer.setSpeed(speed);
+    await _audioPlayer.setSpeed(_speed);
     notifyListeners();
   }
 
