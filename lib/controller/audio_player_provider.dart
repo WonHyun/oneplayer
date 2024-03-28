@@ -179,9 +179,9 @@ class AudioPlayerProvider extends ChangeNotifier {
     return _audioPlayer.loopMode;
   }
 
-  void setVolume(double volume) {
+  void setVolume(double volume) async {
     _volume = volume;
-    _audioPlayer.setVolume(volume);
+    await _audioPlayer.setVolume(_volume);
     notifyListeners();
   }
 
