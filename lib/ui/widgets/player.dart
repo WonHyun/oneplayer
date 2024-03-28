@@ -129,7 +129,7 @@ class _PlayerState extends State<Player> {
             width: 200,
             child: Slider(
               value: ap.speed,
-              min: 0,
+              min: 0.5,
               max: 2.0,
               onChanged: (value) {
                 ap.setSpeed(value);
